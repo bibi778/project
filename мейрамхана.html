@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мейрамхана</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+	<link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+
+    <!-- Навигация -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#"><i class="fas fa-utensils"></i> Мейрамхана</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+				   <li class="nav-item"><a class="nav-link" href="мейрамхана.html">Басты бет</a></li>
+				   <li class="nav-item"><a class="nav-link active" href="меню мейрамхана.html">Мәзір</a></li>
+				   <li class="nav-item"><a class="nav-link" href="байланыс мейрамхана.html">Байланыс</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Ресторан интерьері (Слайдер) -->
+    <div id="restaurantCarousel" class="carousel slide mt-4 mb-4" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://gastro-norma.ru/upload/resize_cache/webp/iblock/26a/9kcnxy10c90j0z8m0conpw290j760z91.webp" class="d-block w-100" alt="Ресторан 1">
+            </div>
+            <div class="carousel-item">
+                <img src="https://firstphotographerdubai.com/wp-content/uploads/2024/07/1.png" class="d-block w-100" alt="Ресторан 2">
+            </div>
+            <div class="carousel-item">
+                <img src="https://img.freepik.com/free-photo/restaurant-interior_1127-3394.jpg" class="d-block w-100" alt="Ресторан 3">
+            </div>
+        </div>
+    </div>
+
+    <!-- "Танымал тағамдар" бөлімі -->
+    <section class="menu py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Танымал тағамдар</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="menu-card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNudKgpBViemYwgjlQK7Iv7mcoDxdiCetpPw&s" alt="Бургер">
+                        <h5>Чизбургер - 3500₸</h5>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="menu-card">
+                        <img src="https://img.pikbest.com/png-images/20241031/pizza-margherita-isolated-on-transparent-or-white-background-png_11034664.png!sw800" alt="Пицца">
+                        <h5>Маргарита пиццасы - 5000₸</h5>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="menu-card">
+                        <img src="https://png.pngtree.com/png-vector/20240613/ourlarge/pngtree-italian-fusilli-pasta-and-pesto-silverware-white-extra-virgin-png-image_12662151.png" alt="Паста">
+                        <h5>Кремді паста - 4000₸</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <p>&copy; 2025 Мейрамхана | Барлық құқықтар қорғалған</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Слайдердің автоматты жылжуы -->
+    <script>
+        var myCarousel = new bootstrap.Carousel(document.getElementById('restaurantCarousel'), {
+            interval: 2000, // 2 секунд сайын ауысады
+            wrap: true
+        });
+    </script>
+
+</body>
+</html>
